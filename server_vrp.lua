@@ -21,7 +21,7 @@ SI.event = {}
 function SI.event:playerSpawn(user, first_spawn)
 	if first_spawn then
 		local content = ""
-		local id = user.cid
+		local id = user.sid
 		name = content.."<div style="..self.cfg.color..">ID:</div>"
 		info = content.."<div style="..self.cfg.id_color..">"..id.."</div>"
 		vRP.EXT.GUI.remote._setDiv(user.source,"name",self.cfg.display_css,self.lang.id.name({name}))
